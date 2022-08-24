@@ -77,10 +77,11 @@ footer{
    margin: 2em;
    border: .2em solid rgb(46, 14, 190);
    padding: 1em;
-   background-color: #8d612ce8;
+   background-color: #000000e8;
   }
   #grilla {
    height: 100vh;
+   width: 100%;
    display: grid;
    grid-template-rows: 1fr 1fr 1fr 1fr;
    grid-template-columns: 1fr;
@@ -88,16 +89,19 @@ footer{
                        "h1"
                        "div"
                        "footer";
+
 }
 
 #grillaSecciones{
    height: 100vh;
+   width: 100%;
    display: grid;
-   grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
    grid-template-columns: 1fr;
    grid-template-areas:"header"
                         "main"
                         "section"
+                        "div"
                         "footer"
 }
 
@@ -112,41 +116,16 @@ footer{
                           "div"
                           "footer";
    }
-   #grillacontacto{
+   #grillaSecciones{
       grid-template-rows: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr;
       grid-template-areas:"header"
                            "main"
                            "section"
                            "footer"
-   }
-   #grillanosotros{ 
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr;
-      grid-template-areas:"header"
-                           "main"
-                           "section"
-                           "footer"
-   
-   }
-   #grillaservicio{
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr;
-      grid-template-areas:"header"
-                           "main"
-                           "section"
-                           "footer"
-   
-   }
-   #grillaproducto{ 
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr;
-      grid-template-areas:"header"
-                           "main"
-                           "section"
-                           "footer"
+  
    
    }
    
-  }
+}
   
