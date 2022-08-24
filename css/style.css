@@ -1,0 +1,152 @@
+* {
+   Margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+
+header{
+   grid-area: header;
+}
+h1{
+   grid-area: h1;
+}
+div{
+   grid-area: div;
+}
+footer{
+   grid-area: footer;
+}
+
+
+
+ nav ul {
+    list-style-type: none;
+   }
+   nav ul li a:link, a:visited, a:active {
+    text-decoration: none;
+   }
+   .estilo{
+    font-style: oblique;
+    text-align: center;
+   }
+   nav ul li{
+    display: inline-block;
+   }
+   
+   .derecha{
+    text-align: right;
+   }
+   .fondofuerte{
+    background-color: rgba(45, 155, 155, 0.822);
+   }
+
+   .separador{
+    margin: 2em;
+    border: .2em solid rgb(0, 0, 0);
+    padding: 1em;
+    background-color: #6bc5b6ef;
+   }
+   .footercuadrado{
+      display: flex;
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      margin: 2em;
+      border: .2em solid rgb(0, 0, 0);
+      padding: 1em;
+      background-color: #23bda3ef;
+   }
+   .fcentro{
+      display: flex;
+      justify-content: center;
+   }
+
+   .imagen{
+    display: flex;
+    justify-content: center;
+   }
+
+   .box{
+      margin: 2em;
+      border: .2em solid #000000;
+      padding: 3em;
+      background-color: #149ea89c;
+  
+  }
+  .separador2{
+   margin: 2em;
+   border: .2em solid rgb(46, 14, 190);
+   padding: 1em;
+   background-color: #8d612ce8;
+  }
+  #grilla {
+   height: 100vh;
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr;
+   grid-template-areas:"header"
+                       "h1"
+                       "div"
+                       "footer";
+}
+
+#grillaSecciones{
+   height: 100vh;
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr;
+   grid-template-areas:"header"
+                        "main"
+                        "section"
+                        "footer"
+}
+
+
+  @media only screen and (max-widht: 500px) {
+   #grilla {
+
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas:"header"
+                          "h1"
+                          "div"
+                          "footer";
+   }
+   #grillacontacto{
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas:"header"
+                           "main"
+                           "section"
+                           "footer"
+   }
+   #grillanosotros{ 
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas:"header"
+                           "main"
+                           "section"
+                           "footer"
+   
+   }
+   #grillaservicio{
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas:"header"
+                           "main"
+                           "section"
+                           "footer"
+   
+   }
+   #grillaproducto{ 
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas:"header"
+                           "main"
+                           "section"
+                           "footer"
+   
+   }
+   
+  }
+  
