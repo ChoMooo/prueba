@@ -4,9 +4,10 @@
     box-sizing: border-box;
  }
  
- header{
-    grid-area: header;
- }
+ @import"./header"
+ 
+ @import"./main"
+
  h1{
     grid-area: h1;
  }
@@ -17,6 +18,7 @@
     grid-area: footer;
  }
  
+ @import "./variables.scss"
  
  
   nav ul {
