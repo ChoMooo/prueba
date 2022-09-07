@@ -14,7 +14,7 @@
         <img src="../image/logo-arriba.jfif">
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="./image/simbolo.jfif" alt=""></a>
+              <a class="navbar-brand" href="#"><img src="../image/simbolo.jfif" alt="logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -45,28 +45,39 @@
             COMPLETAR EL FORMULARIO
         </h1>
     </main>
+    <div class="box">
     <section class="imagen">
-        <article class="box">
+        <article>
             <form action="#">
-                <label for="nombre">Decime tu nombre:
-                    <input type="nombre" placeholder="nombre" name="nombre" class="separador"><br>
+              <div class="row text-center">
+                <label for="nombre">Decime tu Nombre:
+                    <input type="nombre" placeholder="ingrese su nombre" name="nombre" class="bg-dark p-2 m-3 border border-warning" style="--bs-bg-opacity: .8;"><br>
                 </label>
+            </div>
+            <div class="row text-center">
                 <label for="email">Decime tu email:
-                    <input type="email" placeholder="aaa@gmail.com" name="email" class="separador"><br>
+                    <input type="email" placeholder="aaa@gmail.com" name="email" class="bg-dark p-2 m-3 border border-warning" style="--bs-bg-opacity: .8;"><br>
                 </label>
+            </div>
+            <div class="row text-center">
                 <label for="Observaciones"> Observaciones:<br>
-                    <textarea placeholder="Observaciones" class="separador"></textarea>
-                </label> <br>
-                <input type="number" placeholder="DECIME TU EDAD" class="separador"><br>
+                    <textarea placeholder="Observaciones" class="bg-dark p-2 m-3 border border-warning" style="--bs-bg-opacity: .8;"></textarea>
+                </label><br>
+            </div>
+                <input type="number" placeholder="DECIME TU EDAD" class="bg-dark p-2 m-3 border border-warning" style="--bs-bg-opacity: .8;"><br>
+            <div class="row text-center">
                 <div>Queres recibir info sobre nosotros?
-                <input type="checkbox" name="acepta" value="1" class="separador"></div>
-                <input type="submit" value="ENVIAR" class="separador">
-                <input type="reset" value="RESET FORM" class="separador">
+                    <input type="checkbox" name="acepta" value="1">
+                </div>
+            </div>
+                <input type="submit" value="ENVIAR" class="bg-dark p-2 m-3 border border-warning" style="--bs-bg-opacity: .8;">
+                <input type="reset" value="RESET FORM" class="bg-dark p-2 m-3 border border-warning" style="--bs-bg-opacity: .8;">
             </form>
         </article>
     </section>
-    <footer>
-        <ul class="fcentro">
+  </div>
+    <footer class="row text-center">
+        <ul>
             <li  class="footercuadrado"><a href="../pages/contacto.html">contacto</a></li>
         </ul>
     </footer>

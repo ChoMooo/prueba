@@ -1,3 +1,21 @@
-header{
-    grid-area: header;
+
+nav {
+    ul {
+      list-style-type: none;
+      
+      li{
+       display: inline-block;
+       
+       a:link, a:visited, a:active {
+          text-decoration: none;
+      }
+      
+   }
+ }
+}
+div{
+    h1{
+        font-style: oblique;
+        text-align: center;
+    }
 }

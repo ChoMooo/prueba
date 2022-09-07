@@ -1,0 +1,15 @@
+footer{
+    ul{
+        text-align: center;
+        li{
+            display: flex;
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            margin: 2em;
+            border: .2em solid rgb(0, 0, 0);
+            padding: 1em;
+            background-color: #23bda3ef;
+        }
+    }
+ }
