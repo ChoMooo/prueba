@@ -1,3 +1,4 @@
+@import"./mixins";
 @import "./variables.scss";
 @import"./header";
 @import"./main";
@@ -5,91 +6,31 @@
 @import"./footer";
 @import"./imagen";
 
-* {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
- }
- 
 
+body{
+   max-width: 100%;
+   overflow-x: hidden;
+}
 
- h1{
-    grid-area: h1;
- }
- div{
-    grid-area: div;
- }
- 
- 
 .box{
  margin: 2em;
     border: .2em solid #29251c;
     padding: 3em;
     background-color: $color-especial;
 }
-    .imagen{
-     display: flex;
-     justify-content: center;
-    }
- 
-   
-  
-   
-   #grilla {
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas:"header"
-                        "h1"
-                        "div"
-                        "footer";
- 
- }
- 
- #grillaSecciones{
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas:"header"
-                         "main"
-                         "section"
-                         "div"
-                         "footer"
- }
- 
- 
-   @media only screen and (max-widht: 500px) {
-    #grilla {
- 
-       grid-template-rows: 1fr 1fr 1fr 1fr;
-       grid-template-columns: 1fr;
-       grid-template-areas:"header"
-                           "h1"
-                           "div"
-                           "footer";
-    }
-    #grillaSecciones{
-       grid-template-rows: 1fr 1fr 1fr 1fr;
-       grid-template-columns: 1fr;
-       grid-template-areas:"header"
-                            "main"
-                            "section"
-                            "footer"
-   
     
-    }
-    
- }
- 
  .caruselimg{
  width: 25%;
  margin: 0 auto;
  }
+
+      @media (max-width: 2600px) {
+      @include query(rgb(112, 188, 189),bigdesktop)
+   }
+   @include query(blue,desktop);
+   @include query(orange,tablet);
+   @include query(rgb(247,0,255),mobile);
+
+
    
- .menuDerecha{
-justify-content: end;
-}
+   

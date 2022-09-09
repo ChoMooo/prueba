@@ -9,7 +9,7 @@ footer{
             margin: 2em;
             border: .2em solid rgb(0, 0, 0);
             padding: 1em;
-            background-color: #23bda3ef;
+            background-color: map-get($mapa, "fondo1" );
         }
     }
  }

@@ -1,0 +1,13 @@
+$color-especial: #519bd8;
+
+$mapa: ( /*declaramos nuestro mapa*/
+         "fondo1":rgb(138, 153, 194),
+         "fondo2":rgb(144, 79, 167),
+         "fondo3":rgb(102, 102, 206),
+);
+
+@each $fondo, $color in $mapa {
+   .clase--#{$fondo} {
+      background-color: $color;
+   }
+}

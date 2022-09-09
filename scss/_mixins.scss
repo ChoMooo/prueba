@@ -1,0 +1,31 @@
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin query ($background,$vista) {
+body{
+
+    @if $vista == desktop {
+        @media only screen and (max-width: 1024px){
+            background-color: $background;
+        }
+    }
+    @else if $vista == tablet {
+        @media only screen and (max-width: 767px){
+            background-color: $background;
+        }
+    }
+    @else if $vista == mobile {
+        @media only screen and (max-width: 576px){
+            background-color: $background;
+        }
+    }
+    @else{
+        background-color: $background;
+    }
+
+ }
+
+}
